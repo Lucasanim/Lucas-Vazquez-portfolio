@@ -102,7 +102,7 @@ const Projects = () => {
           ))
         }
       </div>
-      {selected && <ProjectCardModal title={selected.title} body={selected.body} images={selected?.images} show={selected!!} handleClose={() => setSelected(null)} />}
+      {selected && <ProjectCardModal title={selected.title} body={selected.body} images={selected?.images} show={!!selected} handleClose={() => setSelected(null)} />}
     </div>
   );
 };
